@@ -17,4 +17,9 @@ class facturaProveedor extends Factura{
     public Proveedor getProveedor(){ 
         return proveedor;
     }
+    public void mostrarArticulos(){
+     for (int i = 0; i < articulosTransferidos.length; i++) {
+            articulosTransferidos[i].printMe();
+        } 
+    }
 }
