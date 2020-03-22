@@ -34,21 +34,40 @@ public class ManejadorClientes {
      *
      * @param clientes
      * @param NIT
-     * @return
+     * devuelve los datos del cliente según su NIT
      */
-    public Cliente buscarCliente(Cliente[] clientes, String NIT) {
+    public void buscarCliente(Cliente[] clientes, String NIT) {
+        boolean existe = false;
+        for (Cliente cliente : clientes) {
+            if (cliente.getNIT().equalsIgnoreCase(NIT)) {
+                cliente.printMe();
+                existe = true;
+            }
+        }
+        if (existe == false) {
+            System.out.println("El cliente no existe");
+        }
+    }
+    
+    public Cliente devolverCliente(Cliente[] clientes, String NIT) {
+        boolean existe = false;
         for (Cliente cliente : clientes) {
             if (cliente.getNIT().equalsIgnoreCase(NIT)) {
                 return cliente;
             }
         }
+        if (existe == false) {
+            System.out.println("El cliente no existe");        
+        }
         return null;
     }
+    
 
     public void printClientes(Cliente[] clientes) {
         for (int i = 0; i < clientes.length; i++) {
             clientes[i].printMe();
         }
+        
     }
 
     private String randNIT() {

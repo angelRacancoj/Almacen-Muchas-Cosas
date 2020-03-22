@@ -12,4 +12,12 @@ public class Factura {
     LocalDate fecha;
     
     double total;
+
+    public Factura(int codigo, LocalDate fecha, double total) {
+        this.codigo = codigo;
+        this.fecha = fecha;
+        this.total = total;
+    }
+    
+
 }

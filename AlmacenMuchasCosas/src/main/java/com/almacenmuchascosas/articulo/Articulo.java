@@ -53,4 +53,9 @@ public class Articulo {
         this.precio = precio;
     }
 
+    public void printMe() {
+        System.out.println("Articulo =" + "Codigo:" + codigo + " Nombre:" + nombre + " Existencia:" + existencia + " Precio: Q." + precio);
+    }
+
+
 }
