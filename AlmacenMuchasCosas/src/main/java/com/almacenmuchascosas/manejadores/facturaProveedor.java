@@ -14,6 +14,7 @@ import com.almacenmuchascosas.factura.Factura;
  */
 class facturaProveedor extends Factura{
     Proveedor proveedor;
+    Articulo[] articulosTransferidos;
     public Proveedor getProveedor(){ 
         return proveedor;
     }
