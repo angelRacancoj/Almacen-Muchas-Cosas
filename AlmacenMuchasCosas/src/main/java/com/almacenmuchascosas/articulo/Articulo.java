@@ -53,4 +53,11 @@ public class Articulo {
         this.precio = precio;
     }
 
+    /**
+     * este metodo me es util para imprimir caracteristicas del objeto 
+     * articulo
+     */
+    public void printMeArt() {
+        System.out.println("Codigo: " + this.codigo + ", Nombre: " + this.nombre + ", Existencias:" + this.existencia + ", Presio: " + this.precio);
+    }
 }
