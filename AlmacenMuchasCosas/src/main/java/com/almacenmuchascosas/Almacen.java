@@ -18,5 +18,4 @@ public class Almacen {
         clientes = clientesM.crearDatos();
         clientesM.printClientes(clientes);
     }
-
 }
