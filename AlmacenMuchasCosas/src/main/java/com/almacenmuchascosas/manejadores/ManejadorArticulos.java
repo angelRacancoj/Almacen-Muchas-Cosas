@@ -35,9 +35,10 @@ public class ManejadorArticulos {
      * @param existencia
      */
     public void obtenerArticulo(Articulo articulos, int codigo, double existencia, int cantidad){
+
             if(existencia > 0){
                 double existenciaRestante = existencia - cantidad;
-             articulos.setExistencia(existenciaRestante);
+                articulos.getCodigo(codigo).setExistencia(existenciaRestante);
             }
         }
 
