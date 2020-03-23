@@ -36,7 +36,7 @@ public class ManejadorClientes {
      * @param NIT
      * @return
      */
-    public Cliente buscarCliente(Cliente[] clientes, String NIT) {
+    public Cliente buscarClientePorNit(Cliente[] clientes, String NIT) {
         for (Cliente cliente : clientes) {
             if (cliente.getNIT().equalsIgnoreCase(NIT)) {
                 return cliente;
