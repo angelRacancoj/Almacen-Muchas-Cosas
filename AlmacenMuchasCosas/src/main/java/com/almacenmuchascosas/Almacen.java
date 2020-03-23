@@ -12,7 +12,6 @@ import com.almacenmuchascosas.manejadores.ManejadorArticulos;
 public class Almacen {
     
     ManejadorClientes clientesM = new ManejadorClientes();
-
     Cliente[] clientes;
 
     public void inicio() {
