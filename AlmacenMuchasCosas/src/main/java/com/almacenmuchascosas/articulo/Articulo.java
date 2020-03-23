@@ -52,5 +52,8 @@ public class Articulo {
     public void setPrecio(double precio) {
         this.precio = precio;
     }
-
+    
+    public void printMe() {
+        System.out.println("Codigo: " + this.codigo + ", Nombre: " + this.nombre + ", Existencia: " + this.existencia + ", Precio: " + this.precio);
+    }
 }
