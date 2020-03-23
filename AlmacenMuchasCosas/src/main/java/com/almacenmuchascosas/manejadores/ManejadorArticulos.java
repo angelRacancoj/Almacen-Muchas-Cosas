@@ -35,7 +35,7 @@ public class ManejadorArticulos {
         }
         return null;
     
-   
+    }
     public void printArticulo(Articulo[] articulos) {
         for (Articulo articulo : articulos) {
             articulo.printMe();
