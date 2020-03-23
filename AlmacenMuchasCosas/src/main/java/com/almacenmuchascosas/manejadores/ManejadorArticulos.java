@@ -27,23 +27,25 @@ public class ManejadorArticulos {
      * @param Codigo
      * @return 
      */
-    public Articulo buscarArticulo(Articulo[] articulos, Int Codigo) {
+    public Articulo buscarArticulo(Articulo[] articulos, int Codigo) {
         for (Articulo articulo : articulos) {
-            if (articulo.getCodigo().equalsIgnoreCase(Codigo)) {
+            if (articulo.getCodigo()==Codigo) {
                 return articulo;
             }
         }
         return null;
     
-
+   
     public void printArticulo(Articulo[] articulos) {
         for (Articulo articulo : articulos) {
             articulo.printMe();
         }
+    
+    
     }
-     public int randCodigo() {
+     private int randCodigo() {
         int numero = (int) (Math.random() * 1000);
-        return String.valueOf(numero);
+        return numero;
     }
-       
+    
 }

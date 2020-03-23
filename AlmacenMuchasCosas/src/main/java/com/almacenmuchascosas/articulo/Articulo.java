@@ -21,6 +21,10 @@ public class Articulo {
         this.precio = precio;
     }
 
+    public Articulo(int randCodigo, int i, String producto1, int i0, double d) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
 
     public int getCodigo() {
         return codigo;
@@ -54,6 +58,7 @@ public class Articulo {
         this.precio = precio;
     }
     
+
     public void printMe() {
   
         System.out.println("Codigo: " + getCodigo() + ", Producto: " + getNombre() + ", Existencia: " + getExistencia() + ", Precio: " + getPrecio());
