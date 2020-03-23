@@ -33,5 +33,8 @@ public class Proveedor extends Entidad {
     public void setNombreContacto(String nombreContacto) {
         this.nombreContacto = nombreContacto;
     }
+    public void prinMe(){  
+        System.out.println("NIT "+getNIT()+", Nombre "+getNombre()+", Dirección "+getDireccion()+", Teléfono "+getTelefono());
+    }  
 
 }

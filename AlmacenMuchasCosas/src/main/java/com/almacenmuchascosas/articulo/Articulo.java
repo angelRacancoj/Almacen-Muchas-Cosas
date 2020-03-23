@@ -52,5 +52,9 @@ public class Articulo {
     public void setPrecio(double precio) {
         this.precio = precio;
     }
+    
+    public void prinMe(){  
+        System.out.println("Codigo: "+getCodigo()+", Nombre: "+getNombre()+", Existencias: "+getExistencia()+", Precio: Q."+getPrecio()+" c/u.");
+    } 
 
 }

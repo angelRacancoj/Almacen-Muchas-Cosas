@@ -10,8 +10,15 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Almacen almacen = new Almacen();
-        almacen.inicio();
+        // TODO code application logic here
+    Almacen almacen = new Almacen();
+    
+    almacen.inicioClientes();
+    
+    almacen.inicioProveedores();
+    
+    almacen.inicioArticulos();
     }
-
+    
 }
+
