@@ -50,8 +50,10 @@ public class ManejadorProveedores {
             
             if ( (providersBills[i].getCode() == providerBill.getCode()) && (provider.getNIT().equalsIgnoreCase(NIT))) {
                 Transaccion[] transaccion = providersBills[i].getTransactions();
-                Articulo[] articles = null;
-                    for(int b=0; b<transaccion.length;i++){
+                Articulo[] articles = new Articulo[transaccion.length];
+                System.out.println(articles.length);
+                System.out.println(transaccion.length);
+                    for(int b=0; b<transaccion.length;b++){
                         articles[b] = transaccion[b].getArticulo();
                     }
                 return articles;
@@ -59,7 +61,10 @@ public class ManejadorProveedores {
         }
         return null;
     }
-
+    /*Metodo que nos permite saber los articulos en base a la factura y a un nit
+      Dicho metodo en el diagrama es articulosProveedor, donde devolveremos 
+     los articulos que coincidan con la factura dada a buscar y con un nit a hallar
+     por lo que devolveremos los articulos de la factura de ese proveedor que le ofrecio al almacen*/
     
     
     

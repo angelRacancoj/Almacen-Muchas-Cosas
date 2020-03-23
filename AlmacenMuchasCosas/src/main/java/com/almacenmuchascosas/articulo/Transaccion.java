@@ -13,7 +13,7 @@ public class Transaccion {
     public Transaccion() {
     }
 
-    public Transaccion(Articulo articulo, double cantidad, double costo) {
+    public Transaccion(Articulo articulo, int cantidad, double costo) {
         this.articulo = articulo;
         this.cantidad = cantidad;
         this.costo = costo;
