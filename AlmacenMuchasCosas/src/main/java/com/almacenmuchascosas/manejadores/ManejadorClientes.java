@@ -14,6 +14,7 @@ import com.almacenmuchascosas.entidades.Cliente;
 public class ManejadorClientes {
 
     public Cliente[] crearDatos() {
+        System.out.println("Clientes: ");
         Cliente[] clientes = new Cliente[10];
         clientes[0] = new Cliente(randNIT(), "pepe", "ciudad", false);
         clientes[0].setDescuento(true);
@@ -26,6 +27,7 @@ public class ManejadorClientes {
         clientes[7] = new Cliente("8", "Ana", "ciudad", true);
         clientes[8] = new Cliente("9", "Lucy", "ciudad", true);
         clientes[9] = new Cliente("10", "Dorys", "ciudad", false);
+        System.out.println("");
         return clientes;
     }
 

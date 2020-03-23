@@ -36,7 +36,9 @@ public class Cliente extends Entidad {
 
     @Override
     public void printMe() {
+       
         System.out.println("NIT: " + getNIT() + ", Nombre: " + getNombre() + ", Direccion: " + getDireccion() + ", Descuento: " + getDescuento());
+       
     }
 
 }
