@@ -9,11 +9,11 @@ import com.almacenmuchascosas.articulo.Articulo;
 public class ManejadorArticulos {
 
     public Articulo[] crearArticulos() {
-        Articulo[] articulos = new Articulo[3];
-        articulos[0] = new Articulo(001, "producotoCero", 10, 20.00);
-        articulos[1] = new Articulo(002, "producotoUno", 10, 20.00);
-        articulos[2] = new Articulo(003, "producotoDos", 10, 20.00);
-        articulos[3] = new Articulo(004, "producotoTres", 10, 20.00);
+        Articulo[] articulos = new Articulo[4];
+        articulos[0] = new Articulo(1001, "producotoCero", 10, 20);
+        articulos[1] = new Articulo(1002, "producotoUno", 15, 26);
+        articulos[2] = new Articulo(1003, "producotoDos", 1, 45);
+        articulos[3] = new Articulo(1004, "producotoTres", 2, 18);
         return articulos;
 
     }

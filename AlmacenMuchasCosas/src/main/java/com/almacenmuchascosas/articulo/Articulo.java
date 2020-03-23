@@ -58,6 +58,6 @@ public class Articulo {
      * articulo
      */
     public void printMeArt() {
-        System.out.println("Codigo: " + this.codigo + ", Nombre: " + this.nombre + ", Existencias:" + this.existencia + ", Presio: " + this.precio);
+        System.out.println("Codigo: " + this.codigo + ", Nombre: " + this.nombre + ", Existencias:" + this.existencia + ", Precio: " + this.precio);
     }
 }
