@@ -46,8 +46,8 @@ public class ManejadorClientes {
     }
 
     public void printClientes(Cliente[] clientes) {
-        for (int i = 0; i < clientes.length; i++) {
-            clientes[i].printMe();
+        for (Cliente cliente : clientes) {
+            cliente.printMe();
         }
     }
 

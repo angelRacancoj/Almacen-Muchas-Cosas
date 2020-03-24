@@ -7,10 +7,15 @@ import com.almacenmuchascosas.articulo.Articulo;
  * @author angelrg
  */
 public class ManejadorArticulos {
-    
+
+    /**
+     * Este netodo se encarga de generar datos iniciales para nuestro sistema
+     *
+     * @return
+     */
     public Articulo[] crearDatos() {
         Articulo[] articulos = new Articulo[10];
-        articulos[0] = new Articulo(110, "Leche", 40, 10.5);        
+        articulos[0] = new Articulo(110, "Leche", 40, 10.5);
         articulos[1] = new Articulo(111, "Harina", 50, 11.4);
         articulos[2] = new Articulo(112, "Cafe", 9, 12.8);
         articulos[3] = new Articulo(113, "Coca-Cola", 45, 13.7);
@@ -22,14 +27,26 @@ public class ManejadorArticulos {
         articulos[9] = new Articulo(119, "Papel", 1, 19.7);
         return articulos;
     }
-    
+
+    /**
+     * Imprime todos los articulos
+     *
+     * @param articulos
+     */
     public void printArticulos(Articulo[] articulos) {
-        for (int i = 0; i < articulos.length; i++) {
-            articulos[i].printMe();
+        for (Articulo articulo : articulos) {
+            articulo.printMe();
         }
     }
-    
-    public Articulo buscarArticulo(Articulo[] articulos, int codigoArticulo) {
+
+    /**
+     * Busca un articulo en base a su codigo
+     *
+     * @param articulos
+     * @param codigoArticulo
+     * @return
+     */
+    public Articulo buscarArticuloPorCodigo(Articulo[] articulos, int codigoArticulo) {
         for (Articulo articulo : articulos) {
             if (articulo.getCodigo() == codigoArticulo) {
                 return articulo;
@@ -37,8 +54,21 @@ public class ManejadorArticulos {
         }
         return null;
     }
-    
-    
-    
-    
+
+    /**
+     * Busca un articulo en base a su nombre
+     *
+     * @param articulos
+     * @param nombreArticulo
+     * @return
+     */
+    public Articulo buscarArticuloPorNombre(Articulo[] articulos, String nombreArticulo) {
+        for (Articulo articulo : articulos) {
+            if (articulo.getNombre().equalsIgnoreCase(nombreArticulo)) {
+                return articulo;
+            }
+        }
+        return null;
+    }
+
 }

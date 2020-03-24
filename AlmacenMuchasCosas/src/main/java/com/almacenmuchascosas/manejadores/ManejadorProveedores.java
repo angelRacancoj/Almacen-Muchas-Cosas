@@ -39,8 +39,8 @@ public class ManejadorProveedores {
     }
     
     public void printProveedores(Proveedor[] proveedores) {
-        for (int i = 0; i < proveedores.length; i++) {
-            proveedores[i].printMe();
+        for (Proveedor proveedore : proveedores) {
+            proveedore.printMe();
         }
     }
     
