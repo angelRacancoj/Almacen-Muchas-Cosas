@@ -24,8 +24,8 @@ public class ManejadorArticulos {
     }
     
     public void printArticulos(Articulo[] articulos) {
-        for (int i = 0; i < articulos.length; i++) {
-            articulos[i].printMe();
+        for (Articulo articulo : articulos) {
+            articulo.printMe();
         }
     }
     
